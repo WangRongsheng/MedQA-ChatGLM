@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: MedQA-ChatGLM
+message: >-
+  If you use this software, please cite it using these
+  metadata.
+type: software
+authors:
+  - given-names: Rongsheng Wang
+    orcid: https://orcid.org/my-orcid?orcid=0000-0003-2390-5999
+repository-code: 'https://github.com/WangRongsheng/MedQA-ChatGLM'
+url: 'https://github.com/WangRongsheng/MedQA-ChatGLM'
+abstract: A Medical QA Model Fine-tuned on ChatGLM Using Multiple fine-tuning Method and Real Medical QA Data
+license: CC BY-NC-SA 4.0
