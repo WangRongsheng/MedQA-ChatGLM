@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MedQA-ChatGLM: A Medical QA Model Fine-tuned on ChatGLM Using Multiple fine-tuning Method and Real Medical QA Data.">
+  <meta name="keywords" content="MedQA-ChatGLM, ChatGLM, Medical">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedQA-ChatGLM: A Medical QA Model Fine-tuned on ChatGLM Using Multiple fine-tuning Method and Real Medical QA Data</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  
+</head>
+<body>
+
+
+  <style type="text/css">
+    table {
+        margin: auto;
+    }
+    table.imagetable {
+        font-family: verdana,arial,sans-serif;
+        font-size:11px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #999999;
+        border-collapse: collapse;
+    }
+    table.imagetable th {
+        background:#b5cfd2 url('cell-blue.jpg');
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #999999;
+    }
+    table.imagetable td {
+        background:#dcddc0 url('cell-grey.jpg');
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #999999;
+    }
+    </style>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h3 class="title is-1 publication-title">MedQA-ChatGLM: A Medical QA Model Fine-tuned on ChatGLM Using Multiple fine-tuning Method and Real Medical QA Data</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Rongsheng Wang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Yaofei Duan</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Junrong Li</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Tao Tan</a><sup>1,*</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Macao Polytechnic University</span>
+            <br>
+            <span class="author-block"><sup>*</sup>Supervisor</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/WangRongsheng/MedQA-ChatGLM"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Demo Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-biking"></i>
+                  </span>
+                  <span>Colab</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-file"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+              <!-- Model Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-cheese"></i>
+                  </span>
+                  <span>Model</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <script>
+      window.addEventListener('load', function() {
+        const urls = [
+          'https://69dea4a84707534ff7.gradio.live',
+        ];
+        const randomIndex = Math.floor(Math.random() * urls.length);
+        const randomURL = urls[randomIndex];
+        const iframe = document.getElementById('gradio');
+        iframe.setAttribute('src', randomURL);
+      });
+    </script>
+
+    <iframe id="gradio" width="100%" height="900">
+      <p>Gradio.</p>
+    </iframe>
+
+      <h2 class="subtitle has-text-centered">
+        A Medical Question-Answering Model Fine-tuned on <span class="dnerf">ChatGLM</span> Using Multiple fine-tuning Method and Real Medical Question-Answering Data
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <img src="./static/images/内科.png">
+        </div>
+        <div class="item item-chair-tp">
+          <img src="./static/images/外科.png">
+        </div>
+        <div class="item item-shiba">
+          <img src="./static/images/妇产科.png">
+        </div>
+        <div class="item item-fullbody">
+          <img src="./static/images/皮肤科.png">
+        </div>
+        <div class="item item-blueshirt">
+          <img src="./static/images/中医科.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div style="margin-right:1210px;margin-left:1210px"></div>
+        <div class="item" style="width:1200px;height:400px">
+          <img src="./static/images/内科.png">
+        </div>
+        <div style="margin-right:1210px;margin-left:1210px"></div>
+        <div class="item" style="width:1200px;height:400px">
+          <img src="./static/images/外科.png">
+        </div>
+        <div style="margin-right:1210px;margin-left:1210px"></div>
+        <div class="item" style="width:1200px;height:400px">
+          <img src="./static/images/妇产科.png">
+        </div>
+        <div style="margin-right:1210px;margin-left:1210px"></div>
+        <div class="item" style="width:1200px;height:400px">
+          <img src="./static/images/皮肤科.png">
+        </div>
+        <div style="margin-right:1210px;margin-left:1210px"></div>
+        <div class="item" style="width:1200px;height:400px">
+          <img src="./static/images/中医科.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <center><h2 class="title is-3">Abstract</h2></center>
+        <div class="content has-text-justified">
+          <p>
+            Recently, large-scale language models (LLMs) such as ChatGPT have shown significant success in following instructions and producing human-like responses in general domains. However, such language models have yet to adapt to the medical domain, resulting in poor accuracy of responses and an inability to provide reasonable advice regarding medical diagnosis and medication. To address this issue, we fine-tuned our MedQA-ChatGLM model based on 300,000 real-world patient-doctor dialogues from an online medical consulting website. By fine-tuning the LLM with these 300,000 dialogues, our model demonstrated significant improvements in understanding patients' needs and providing informed advice. 
+          </p>
+          <p>
+            It is worth noting that the MedQA-ChatGLM model was fine-tuned based on the ChatGLM-6B, and our fine-tuning methods included <a href="https://arxiv.org/abs/2106.09685">LoRA</a>, <a href="https://arxiv.org/abs/2012.14913">Freeze</a>, <a href="https://github.com/THUDM/P-tuning-v2">P-Tuning V2</a>. Additionally, MedQA-ChatGLM also supports RL and <a href="https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat">RLHF</a> methods, which are techniques that combine reinforcement learning with human feedback, where human preferences are used as reward signals to guide the model in generating high-quality language outputs. Through the use of a diverse set of feedback providers, RLHF helps the model learn to generate text that represents different perspectives, making it more versatile and useful in a variety of contexts.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <center><h2 class="title is-3">Model</h2></center>
+        
+        <div class="publication-video">
+          <p align="left">MedQA-ChatGLM incorporates two major datasets of real patient and doctor conversations and is efficiently fine-tuned using LoRA, Freeze, and P-Tuning V2. The introduction of RL and RLHF methods allows the model to be fully fitted for performance in communication with humans. An online usage page was constructed using Gradio to make it accessible to all.</p>
+          <img alt="" src="./static/images/model.png" style="margin: 0 auto;width: 100%;" />
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!--/ Matting. -->
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <center><h2 class="title is-3">Dataset</h2></center>
+
+        <!-- Interpolating. -->
+        <div class="content has-text-justified">
+          <p>
+            Many medical data have been collected for training LLMs, such as <a href="https://github.com/Kent0n-Li/ChatDoctor">ChatDoctor</a> which uses 110k dialogues between patients and doctors from two real scenarios, as well as 5k fake dialogues generated by ChatGPT for model training. <a href="https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese">Huatuo-Llama-Med-Chinese</a> uses medical knowledge base and ChatGPT to generate dialogue data from 8k patients and doctors. It is worth mentioning that they have improved the precision of the model by introducing the medical knowledge base. <a href="https://github.com/MediaBrain-SJTU/MedicalGPT-zh">MedicalGPT-zh</a> uses 52k dialogues between patients and doctors from real scenarios, as well as 130k dialogues with explanatory answers for medical questions, for model training. <a href="https://github.com/xionghonglin/DoctorGLM">DoctorGLM</a> shares a dataset of Q&A dialogues for specific medical conditions, and incorporates more open medical datasets for fine-tuning the model. These works have left a deep impression on us, but issues of fake medical dialogues and limited data volume still pose challenges for effective LLMs fine-tuning. <a href="https://github.com/zhangsheng93/cMedQA2">cMedQA2</a> and <a href="https://github.com/zhangsheng93/cMedQA">cMedQA</a> are dedicated medical Q&A datasets for the Chinese community. The integration of cMedQA and cMedQA2 can provide sufficient real-world medical dialogues for LLMs training, and these dialogues will serve the Chinese medical field well. Table shows some overview of the cMedQA and cMedQA2 dataset.
+          </p>
+        </div>
+        <table class="imagetable">
+          <tr>
+              <th>DataSet</th><th>#Ques</th><th>#Ans</th><th>Ave. #words per Question</th><th>Ave. #words per Answer</th><th>Ave. #characters per Question</th><th>Ave. #characters per Answer</th>
+          </tr>
+          <tr>
+              <td>cMedQA</td><td>101,743</td><td>101,743</td><td>96</td><td>169</td><td>119</td><td>212</td>
+          </tr>
+          <tr>
+              <td>cMedQA2</td><td>108,000</td><td>203,569</td><td>-</td><td>-</td><td>49</td><td>101</td>
+          </tr>
+          <tr>
+            <td>cMedQA-merged</td><td>-</td><td>305,312</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+          </table>
+        <!--/ Interpolating. -->
+        All the datasets we have constructed that can be used for the training of LLMs can be found: <a href="https://huggingface.co/datasets/wangrongsheng/cMedQA-V1.0">wangrongsheng/cMedQA-V1.0</a>, <a href="https://huggingface.co/datasets/wangrongsheng/cMedQA-V2.0">wangrongsheng/cMedQA-V2.0</a>, <a href="https://huggingface.co/datasets/wangrongsheng/cMedQA-merged">wangrongsheng/cMedQA-merged</a>. cMedQA-merged is used for our training. However if you do not have enough computing resources you can use cMedQA-V1.0 and cMedQA-V2.0. If you need to use them for your research, please cite them.
+        <br>
+        <strong>In future work, combining all the datasets to fine-tune the training of an oversized medical Q&A LLMs is a very promising endeavour.</strong> 
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <center><h2 class="title is-3">Acknowledgement</h2></center>
+
+        <div class="content has-text-justified">
+          <p>
+            This work has been helped in many ways and we are truly grateful to them.
+          </p>
+          <p>
+            <a href="https://github.com/zhangsheng93">ZhangSheng</a> provides a very rich and realistic dataset of conversations between Chinese patients and doctors.
+          </p>
+          <p>
+            <a href="https://github.com/hiyouga/ChatGLM-Efficient-Tuning">ChatGLM-Efficient-Tuning</a> provides a very rich set of training methods for fine-tuning ChatGLM-based models, such as Freeze, LoRA, P-Tuning V2 and RLHF, which helped us to build the training code quickly.
+          </p>
+          <p>
+            <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> has shared the implementation of the project page to help showcase our own latest work.
+          </p>
+          <p>
+            <a href="https://gradio.app/">Gradio</a> helped us to quickly build a MedQA-ChatGLM interface that can be used online.
+          </p>
+          <p>
+            <a href="https://colab.research.google.com/">Google Colab</a> supports everyone to use MedQA-ChatGLM in their own space without the need to purchase a high performance GPU service.
+          </p>
+          <p>
+            <a href="https://huggingface.co/">HuggingFace</a> provides us with a place to store and share data and model checkpoints.
+          </p>
+          <p>
+            The fine-tuning training and testing for this work was done on four graphics cards, A100 80GB, and we thank the contributors of the resources.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <center><h2 class="title">BibTeX</h2></center>
+    <pre><code>@software{2023MedQA-ChatGLM,
+    author = {Rongsheng Wang, Yaofei Duan, Junrong Li, Tao Tan},
+    license = {CC BY-NC-SA 4.0},
+    title = {{MedQA-ChatGLM}},
+    url = {https://github.com/WangRongsheng/MedQA-ChatGLM}
+}</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
