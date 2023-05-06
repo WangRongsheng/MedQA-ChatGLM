@@ -39,3 +39,4 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/web_demo.py \
 1. https://github.com/zhangsheng93/cMedQA2
 2. https://github.com/zhangsheng93/cMedQA
 3. https://github.com/hiyouga/ChatGLM-Efficient-Tuning
+4. https://github.com/THUDM/ChatGLM-6B
