@@ -33,6 +33,8 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/web_demo.py \
 |微调方式|模型权重|
 |:-|:-|
 |LoRA|[MedQA-ChatGLM-LoRA](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-LoRA)|
+|P-Tuning V2|很快公布|
+|Freeze|很快公布|
 
 # 参考
 
