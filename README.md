@@ -1,5 +1,7 @@
 # MedQA-ChatGLM
 
+![](./images/model.png)
+
 # 使用
 
 1. 安装环境
