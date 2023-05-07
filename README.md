@@ -67,6 +67,11 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/infer.py \
 |P-Tuning V2|很快公布||
 |Freeze|[MedQA-ChatGLM-Freeze](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-Freeze)|28h|
 
+<details>
+  <summary>训练设置</summary>
+  <p>* 实验在A100 (1X, 80GB)上进行</p>
+</details>
+
 # 参考
 
 1. https://github.com/zhangsheng93/cMedQA2
