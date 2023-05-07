@@ -61,6 +61,21 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/infer.py \
                                               (med-freez/)
 ```
 
+## 4. 合并
+
+合并模型：
+```python
+CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/export_weights.py \
+                              --finetuning_weights_path ./med-lora \
+                              --save_weights_path ./save_lora
+```
+
+加载合并模型：
+```python
+CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/load_export_weights.py \
+                              --save_weights_path ./save_lora
+```
+
 # 结果
 
 |微调方式|模型权重|训练时长|
