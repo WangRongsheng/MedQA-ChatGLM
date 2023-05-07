@@ -69,7 +69,7 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/infer.py \
 
 <details>
   <summary>训练设置</summary>
-  <p>* 实验在A100 (1X, 80GB)上进行</p>
+  <p>* 实验是在Linux系统，A100 (1X, 80GB)上进行的</p>
 </details>
 
 # 参考
