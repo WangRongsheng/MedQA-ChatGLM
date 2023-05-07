@@ -14,7 +14,7 @@ from transformers import HfArgumentParser
 os_name = platform.system()
 clear_command = "cls" if os_name == "Windows" else "clear"
 stop_stream = False
-welcome = "欢迎使用 ChatGLM-6B 模型，输入内容即可对话，clear清空对话历史，stop终止程序"
+welcome = "欢迎使用 MedQA-ChatGLM 模型，输入内容即可对话，clear清空对话历史，stop终止程序"
 
 
 def build_prompt(history):
