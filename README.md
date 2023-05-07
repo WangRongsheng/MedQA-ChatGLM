@@ -43,6 +43,8 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/finetune.py \
                               --fp16
 ```
 
+更多参数信息，可以查看[docs/参数详解.md](https://github.com/WangRongsheng/MedQA-ChatGLM/blob/main/docs/%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3.md) .
+
 ## 3. 推理
 
 ### 3.1 可视化
