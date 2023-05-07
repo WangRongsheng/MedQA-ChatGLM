@@ -4,11 +4,13 @@
 
 # 使用
 
-1. 安装环境
+## 1. 安装环境
 ```python
 pip install -r requirements.txt
 ```
-2. LoRA微调
+## 2. 微调
+
+### 2.1 LoRA
 ```python
 CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/finetune.py \
                               --do_train \
@@ -24,10 +26,28 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/finetune.py \
                               --num_train_epochs 10.0 \
                               --fp16
 ```
+### 2.2 Freeze微调
+```python
+CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/finetune.py \
+                              --do_train \
+                              --dataset merged-cMedQA \
+                              --finetuning_type freeze \
+                              --output_dir ./med-freeze \
+                              --per_device_train_batch_size 32 \
+                              --gradient_accumulation_steps 256 \
+                              --lr_scheduler_type cosine \
+                              --logging_steps 500 \
+                              --save_steps 1000 \
+                              --learning_rate 5e-5 \
+                              --num_train_epochs 10.0 \
+                              --fp16
+```
+
 3. 推理
 ```python
 CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/web_demo.py \
                               --checkpoint_dir med-lora/
+                                              (med-freez/)
 ```
 
 # 结果
@@ -36,7 +56,7 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/web_demo.py \
 |:-|:-|:-|
 |LoRA|[MedQA-ChatGLM-LoRA](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-LoRA)|28h|
 |P-Tuning V2|很快公布||
-|Freeze|很快公布||
+|Freeze|[MedQA-ChatGLM-Freeze](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-Freeze)|28h|
 
 # 参考
 
