@@ -1,5 +1,8 @@
 {
 	"merged-cMedQA": {
 		"hf_hub_url": "wangrongsheng/cMedQA-merged"
+	},
+	"self_cognition": {
+        	"file_name": "self_cognition.json"
 	}
 }
