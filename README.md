@@ -52,6 +52,7 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/finetune.py \
 CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/web_demo.py \
                               --checkpoint_dir med-lora/
                                               (med-freez/)
+                                              (med-p_tuning/)
 ```
 
 ### 3.2 命令行
@@ -59,6 +60,7 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/web_demo.py \
 CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/infer.py \
                               --checkpoint_dir med-lora/
                                               (med-freez/)
+                                              (med-p_tuning/)
 ```
 
 ## 4. 合并
