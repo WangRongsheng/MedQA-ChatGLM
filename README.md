@@ -80,11 +80,11 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/load_export_weights.py \
 
 # 结果
 
-|微调方式|模型权重|训练时长|
-|:-|:-|:-|
-|LoRA|[MedQA-ChatGLM-LoRA](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-LoRA)|28h|
-|P-Tuning V2|[MedQA-ChatGLM-PTuningV2](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-PTuningV2)|27h|
-|Freeze|[MedQA-ChatGLM-Freeze](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-Freeze)|28h|
+|微调方式|模型权重|训练时长|训练轮次|
+|:-|:-|:-|:-|
+|LoRA|[MedQA-ChatGLM-LoRA](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-LoRA)|28h|10|
+|P-Tuning V2|[MedQA-ChatGLM-PTuningV2](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-PTuningV2)|27h|10|
+|Freeze|[MedQA-ChatGLM-Freeze](https://huggingface.co/wangrongsheng/MedQA-ChatGLM-Freeze)|28h|10|
 
 <details>
   <summary>训练设置</summary>
