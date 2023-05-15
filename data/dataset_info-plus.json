@@ -1,0 +1,21 @@
+{
+	"merged-cMedQA": {
+		"hf_hub_url": "wangrongsheng/cMedQA-merged"
+	},
+	"Huatuo": {
+		"hf_hub_url": "wangrongsheng/Huatuo-8k"
+	},
+	"CMD": {
+		"hf_hub_url": "wangrongsheng/CMD-merged"
+	},
+	"MedDialog": {
+		"hf_hub_url": "wangrongsheng/MedDialog-1.1M"
+	},
+	"guanaco": {
+		"hf_hub_url": "Chinese-Vicuna/guanaco_belle_merge_v1.0"
+	},
+	"cognition": {
+		"hf_hub_url": "wangrongsheng/self_cognition"
+	}
+}
+
