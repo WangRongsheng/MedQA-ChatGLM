@@ -1,3 +1,5 @@
+> 超大规模医学问答微调权重即将开源！！
+
 # MedQA-ChatGLM
 
 ![](./images/model.png)
