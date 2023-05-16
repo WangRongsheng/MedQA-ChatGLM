@@ -16,6 +16,12 @@
 	},
 	"cognition": {
 		"hf_hub_url": "wangrongsheng/self_cognition"
-	}
+	},
+	"comparison_gpt4_en": {
+        	"file_name": "comparison_gpt4_data_en.json"
+	 },
+	 "comparison_gpt4_zh": {
+	 	"file_name": "comparison_gpt4_data_zh.json"
+	 }
 }
 
