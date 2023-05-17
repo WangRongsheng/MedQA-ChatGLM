@@ -12,6 +12,11 @@
 |[ChatDoctor](https://github.com/Kent0n-Li/ChatDoctor)|[HealthCareMagic-100k](https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing) 包含100k+真实患者与医生对话数据集，[icliniq-10k](https://drive.google.com/file/d/1ZKbqgYqWc7DJHs3N9TQYQVPdDQmZaClA/view?usp=sharing) 包含10k+患者与医生对话数据集，[GenMedGPT-5k](https://drive.google.com/file/d/1nDTKZ3wZbZWTkFMBkxlamrzbNz0frugg/view?usp=sharing) 包含5k+由GPT生成的医患对话数据集|LLaMA-7B|
 |[Med-ChatGLM](https://github.com/SCIR-HI/Med-ChatGLM)|数据集未公开|ChatGLM-6B|
 |[Huatuo-Llama-Med-Chinese](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)|数据集未公开|LLaMA-7B|
+|[DoctorGLM](https://github.com/xionghonglin/DoctorGLM)|[CMD.](https://huggingface.co/datasets/wangrongsheng/CMD-merged) 、[MedDialog](https://huggingface.co/datasets/wangrongsheng/MedDialog-1.1M) 、ChatDoctor项目数据集|ChatGLM-6B|
+|[MedicalGPT-zh](https://github.com/MediaBrain-SJTU/MedicalGPT-zh)|数据未开源|ChatGLM-6B|
+|[Medical_NLP](https://github.com/FreedomIntelligence/Medical_NLP) <sup>1</sup>|-|-|
+
+<sup>1</sup> 为相关医学的大模型资源
 
 # 使用
 
