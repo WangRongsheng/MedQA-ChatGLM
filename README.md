@@ -82,7 +82,7 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/infer.py \
                                               (med-p_tuning/)
 ```
 
-## 4. 合并
+## 4. 合并（可选）
 
 合并模型：
 ```python
