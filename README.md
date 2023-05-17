@@ -45,6 +45,23 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/finetune.py \
                               --fp16
 ```
 
+### 2.3 P-Turning V2
+
+```python
+CUDA_VISIBLE_DEVICES=1 python MedQA-ChatGLM/finetune.py \
+                              --do_train --dataset merged-cMedQA \
+                              --finetuning_type p_tuning \
+                              --output_dir ./med-p_tuning \
+                              --per_device_train_batch_size 32 \
+                              --gradient_accumulation_steps 256 \
+                              --lr_scheduler_type cosine \
+                              --logging_steps 500 \
+                              --save_steps 1000 \
+                              --learning_rate 5e-5 \
+                              --num_train_epochs 10.0 \
+                              --fp16
+```
+
 更多参数信息，可以查看[docs/参数详解.md](https://github.com/WangRongsheng/MedQA-ChatGLM/blob/main/docs/%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3.md) .
 
 ## 3. 推理
