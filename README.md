@@ -16,6 +16,7 @@
 |[Huatuo-Llama-Med-Chinese](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)|[Huatuo-data](https://huggingface.co/datasets/wangrongsheng/Huatuo-data) 、[Huatuo-liver-cancer](https://huggingface.co/datasets/wangrongsheng/Huatuo-liver-cancer)|LLaMA-7B|
 |[DoctorGLM](https://github.com/xionghonglin/DoctorGLM)|[CMD.](https://huggingface.co/datasets/wangrongsheng/CMD-merged) 、[MedDialog](https://huggingface.co/datasets/wangrongsheng/MedDialog-1.1M) 、ChatDoctor项目数据集|ChatGLM-6B|
 |[MedicalGPT-zh](https://github.com/MediaBrain-SJTU/MedicalGPT-zh)|数据未开源|ChatGLM-6B|
+|[Dr.LLaMA](https://github.com/zguo0525/Dr.LLaMA)||LLaMA|
 |[Medical_NLP](https://github.com/FreedomIntelligence/Medical_NLP) <sup>2</sup>|-|-|
 
 <sup>2</sup> 为相关医学的大模型资源
