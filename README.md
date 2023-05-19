@@ -19,7 +19,7 @@
 
 <sup>2</sup> 为相关医学的大模型资源
 
-![](./images/data-plus.png)
+![](./images/data-plus2.png)
 
 # 使用
 
