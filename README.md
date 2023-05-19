@@ -81,6 +81,30 @@ CUDA_VISIBLE_DEVICES=1 python MedQA-ChatGLM/finetune.py \
 
 更多参数信息，可以查看[docs/参数详解.md](https://github.com/WangRongsheng/MedQA-ChatGLM/blob/main/docs/%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3.md) .
 
+多GPU分布式训练：
+
+```python
+# 配置分布式参数
+accelerate config
+
+# 分布式训练
+accelerate launch src/finetune.py \
+                  --do_train \
+                  --dataset Huatuo,CMD,MedDialog,guanaco,cognition \
+                  --finetuning_type lora \
+                  --output_dir med-lora \
+                  --per_device_train_batch_size 16 \
+                  --gradient_accumulation_steps 4 \
+                  --lr_scheduler_type cosine \
+                  --logging_steps 10 \
+                  --save_steps 1000 \
+                  --learning_rate 5e-5 \
+                  --num_train_epochs 3.0 \
+                  --fp16 \
+                  --ddp_find_unused_parameters False \ # 分布式训练时，LoRA微调需要添加防止报错
+                  --plot_loss
+```
+
 ## 3. 推理
 
 ### 3.1 可视化
