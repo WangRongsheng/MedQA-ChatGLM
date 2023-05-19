@@ -1,5 +1,3 @@
-> 超大规模医学问答微调权重即将开源！！
-
 # MedQA-ChatGLM <sup>1</sup>
 
 ![](./images/model.png)
@@ -20,6 +18,8 @@
 |[Medical_NLP](https://github.com/FreedomIntelligence/Medical_NLP) <sup>2</sup>|-|-|
 
 <sup>2</sup> 为相关医学的大模型资源
+
+![](./images/data-plus.png)
 
 # 使用
 
