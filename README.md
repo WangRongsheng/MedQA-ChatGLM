@@ -17,6 +17,7 @@
 |[Dr.LLaMA](https://github.com/zguo0525/Dr.LLaMA)||LLaMA|
 |[Medical_NLP](https://github.com/FreedomIntelligence/Medical_NLP) <sup>2</sup>|-|-|
 |[CMCQA](https://github.com/WENGSYX/CMCQA) <sup>3</sup>|-|-|
+|[HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT)|-|Bloom?|
 
 - <sup>2</sup> 为相关医学的大模型资源
 - <sup>3</sup> 来自中国医学对话问答网站春雨，在男科、耳科、妇产科等45个科室医学对话材料
