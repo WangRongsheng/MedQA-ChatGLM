@@ -25,6 +25,7 @@
 
 - <sup>2</sup> 为相关医学的大模型资源，请务必格外关注[FreedomIntelligence](https://github.com/FreedomIntelligence)
 - <sup>3</sup> 来自中国医学对话问答网站春雨，在男科、耳科、妇产科等45个科室医学对话材料
+- https://medical.chat-data.com/
 
 # 使用
 
