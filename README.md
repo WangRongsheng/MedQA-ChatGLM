@@ -167,4 +167,5 @@ CUDA_VISIBLE_DEVICES=0 python MedQA-ChatGLM/load_export_weights.py \
 1. https://github.com/zhangsheng93/cMedQA2
 2. https://github.com/zhangsheng93/cMedQA
 3. https://github.com/hiyouga/ChatGLM-Efficient-Tuning
-4. https://github.com/THUDM/ChatGLM-6B
+4. https://github.com/jackaduma/ChatGLM-LoRA-RLHF-PyTorch
+5. https://github.com/THUDM/ChatGLM-6B
