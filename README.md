@@ -17,7 +17,6 @@
 |[Dr.LLaMA](https://github.com/zguo0525/Dr.LLaMA)||LLaMA|
 |[Medical_NLP](https://github.com/FreedomIntelligence/Medical_NLP) <sup>2</sup>|-|-|
 |[CMCQA](https://github.com/WENGSYX/CMCQA) <sup>3</sup>|-|-|
-|[HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT)|-|Bloom-7B|
 |[QiZhenGPT](https://github.com/CMKRG/QiZhenGPT)|-|-|
 |[LLM-Pretrain-FineTune](https://github.com/NLPxiaoxu/LLM-Pretrain-FineTune)|-|-|
 |[PMC-LLaMA](https://github.com/chaoyi-wu/PMC-LLaMA)|-|LLaMA-7B|
