@@ -25,6 +25,7 @@
 |[MedicalGPT](https://github.com/shibing624/MedicalGPT)|-|-|
 |[LLM-Pretrain-FineTune](https://github.com/X-jun-0130/LLM-Pretrain-FineTune)|-|-|
 |[ShenNong-TCM-LLM](https://github.com/michael-wzhu/ShenNong-TCM-LLM)|-|-|
+|[Sunsimiao](https://github.com/thomas-yanxin/Sunsimiao)|-|-|
 
 - <sup>2</sup> 为相关医学的大模型资源，请务必格外关注[FreedomIntelligence](https://github.com/FreedomIntelligence)
 - <sup>3</sup> 来自中国医学对话问答网站春雨，在男科、耳科、妇产科等45个科室医学对话材料
