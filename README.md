@@ -1,3 +1,7 @@
+> **Note**
+> 
+> **欢迎关注我们最新的工作：CareLlama (关怀羊驼)，它是一个医疗大语言模型，同时它集合了数十个公开可用的医疗微调数据集和开放可用的医疗大语言模型以促进医疗LLM快速发展：https://github.com/WangRongsheng/CareLlama**
+
 # MedQA-ChatGLM <sup>1</sup>
 
 ![](./images/model.png)
