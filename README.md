@@ -33,6 +33,7 @@
 |[CMLM-ZhongJing](https://github.com/pariskang/CMLM-ZhongJing)|-|-|
 |[ZhongJing](https://github.com/SupritYoung/Zhongjing)|-|-|
 |[Ming](https://github.com/MediaBrain-SJTU/MING)|-|-|
+|[DISC-MedLLM](https://github.com/FudanDISC/DISC-MedLLM)|-|-|
 
 
 - <sup>2</sup> 为相关医学的大模型资源，请务必格外关注[FreedomIntelligence](https://github.com/FreedomIntelligence)
